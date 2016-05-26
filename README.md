@@ -1,1 +1,1 @@
-# calculator
+This program is a calulator aimed to help understand the C language and its funcitonality. Calc.c is a program that adds, subtracts, and multiplies two numbers in different bases (binary, octal, hexadecimal, decimal), then outputs the result in any base. Format.c is a program that prints the decimal values of bit sequences representing integer and floating point data types. 
