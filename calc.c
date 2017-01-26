@@ -1,4 +1,5 @@
-//New version of calc.c w/ proper handling of hex. changes made only in line 293 
+//Written by David Alummoottil
+
 
 #include <stdio.h>
 #include <stdlib.h>
