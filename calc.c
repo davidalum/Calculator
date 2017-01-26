@@ -8,7 +8,7 @@
 #include <math.h>
 
 struct Number_ {
-  char *type; //o for octal etc..
+  char *type; //o for octal, b for binary etc..
  };
 
 typedef struct Number_ Number;
@@ -41,6 +41,7 @@ long decToOct(long decNum){
   return octNum;
 
 }
+/*Converts a binary number into decimal format*/ 
 
 long binToDec(long binNum){
   long decNum = 0;
@@ -55,6 +56,9 @@ long binToDec(long binNum){
   }
   return decNum;
 }
+
+/*Converts a Decimal number into Binary format*/ 
+
 long decToBin(long decNum){
   long rem; 
   long j=1;
@@ -68,10 +72,8 @@ long decToBin(long decNum){
     }
   return binNum;
 }
-/*long hexToDec(long hexNum){
 
-  return 0;}*/
-
+/*Converts a Hexadecimal number into decimal format*/ 
 
 long hexToDec(char *hexNum){
   long decimalNumber = 0;
@@ -91,6 +93,8 @@ long hexToDec(char *hexNum){
   return decimalNumber;
   return 0;
 }
+
+/*Converts a decimal number into hexadecimal format*/ 
 
 char* decToHex(long decNum){
   int quotient;
@@ -239,7 +243,7 @@ long validCheck(char *string){ //return 0 for not valid, 1 for valid, 2 for nega
       return 3;
 }
   }
-  return 0; //fc != doxb or - 
+  return 0;  
 }
 
  long strToInt(char a[]) {
@@ -270,7 +274,7 @@ free(testNum);
   
 }
 
-int main( int argc, char ** argv){  //calc + d1234 or + d-1234
+int main( int argc, char ** argv){  
   if(argc != 5){ //check to see if anything is entered in command line                                                                                                                                     
     fprintf(stderr,"Command line does not have correct number of arguments. \n");
     return -1;
